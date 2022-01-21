@@ -1,0 +1,52 @@
+@font-face 
+    font-family: 'Open-SansRegular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+@font-face 
+    font-family: 'Open-SansBold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+
+html
+    font-family: 'Open-SansRegular', sans-serif
+    font-size: 16px
+    color: $light
+body
+    background: $bkgc
+
+.container
+    max-width: 1150px
+    width: 100%
+    margin: auto
+a
+    text-decoration: none
+    color: $light
+    &:hover
+        color: $primary
+.logo
+    font-family: 'Open-SansBold';
+    font-size: 24px
+    color: $primary;
+    text-transform: uppercase
+.button
+    font-family: 'Open-SansRegular', sans-serif
+    border: none
+    outline: none
+    margin-left: 10px
+    border-radius: 5px;
+    cursor: pointer
+    &--primary
+        padding: 10px 20px
+        background-color: $primary
+        color: $light
+        &:hover
+            padding: 9px 19px
+            background: transparent
+            border: 1px solid $light
+    &--secondary
+        padding: 9px 19px
+        background: transparent
+        color: $light
+        border: 1px solid $light
+        &:hover
+            background: $primary
+            border: none
+            padding: 10px 20px

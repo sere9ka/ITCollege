@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Open-SansRegular';
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Open-SansBold';
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+html {
+  font-family: 'Open-SansRegular', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+body {
+  background: #020A18;
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #3A68B8;
+}
+
+.logo {
+  font-family: 'Open-SansBold';
+  font-size: 24px;
+  color: #3A68B8;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: 'Open-SansRegular', sans-serif;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button--primary {
+  padding: 10px 20px;
+  background-color: #3A68B8;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  padding: 9px 19px;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+.button--secondary {
+  padding: 9px 19px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.button--secondary:hover {
+  background: #3A68B8;
+  border: none;
+  padding: 10px 20px;
+}
+
+.header {
+  z-index: 999;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation {
+  max-width: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background: url("../img/IT_bel_Test_1.png") no-repeat center/cover;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin-top: -68px;
+}
+
+.hero__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero__promo {
+  max-width: 50%;
+  margin-right: 30px;
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #3A68B8;
+  margin-bottom: 10px;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.hero__desc {
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 20px;
+}
+
+.hero__img-block {
+  max-width: 45%;
+}
+
+.hero__footer {
+  width: 100%;
+}
+
+.hero__companys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
