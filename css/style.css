@@ -205,6 +205,7 @@ a:hover {
 }
 
 .course {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,4 +268,71 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  .header .button--secondary {
+    display: none;
+  }
+  .hero__img-block {
+    display: none;
+  }
+  .hero__promo {
+    margin-bottom: 30px;
+  }
+  .courses-slider__block {
+    flex-wrap: wrap;
+  }
+  .course {
+    max-width: 35%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header .button--primary {
+    display: none;
+  }
+  .hero {
+    padding-left: 10%;
+  }
+  .hero__promo {
+    max-width: 100%;
+  }
+  .hero__companys {
+    flex-wrap: wrap;
+  }
+  .company {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 860px) {
+  .logo {
+    display: none;
+  }
+  .header__block {
+    justify-content: center;
+  }
+  .hero__footer {
+    display: none;
+  }
+  .learn-more {
+    padding-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .learn-more__block-text {
+    max-width: 100%;
+  }
+  .section__img-block {
+    display: none;
+  }
+  .footer__block {
+    justify-content: center;
+  }
 }
